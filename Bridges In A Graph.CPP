@@ -1,4 +1,3 @@
-##  bridge in a graph 
 #include <bits/stdc++.h> // includes all standard headers
 using namespace std;
 
