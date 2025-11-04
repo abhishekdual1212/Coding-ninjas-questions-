@@ -58,42 +58,27 @@ for(int j=0;j<num.size();j++){
 }
 
 
-// int solveRecmem(vector<int> &num, int x,vector<int> &dp){
-//     //base case
-//     if(x==0)
-//     return 0;
-//     if(x<0)
-//     return INT_MAX;
-//  if (dp[x] != -1)
-//  return dp[x];
-//     int mini = INT_MAX;
-
-// for(int i=0; i<num.size();i++){
-//     int ans =solveRecmem(num, x-num[i],dp);
-//     if(ans!= INT_MAX)
-//     mini = min(mini,1+ans);
-// }
-// dp[x] = mini;
-// return mini;
-// }
 
 
 
 
 int minimumElements(vector<int> &num, int x)
 {
+
+    //function call for method1
 //     // int ans =solveRec(num,x);
 //     // if(ans==INT_MAX)
 //     // return -1;
 
-  //function call 
+  //function call  for method 2
 // vector<int> dp(x+1,-1);
 // int ans =solveRecmem(num,x,dp);
 // if(ans==INT_MAX)
 // return -1;
 // else
 // return ans;
-
+ //function call for method 3
+    
 return solvetab(num,x);
 
 }
