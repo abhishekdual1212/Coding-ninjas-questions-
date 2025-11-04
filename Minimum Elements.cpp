@@ -1,4 +1,4 @@
-// solve minimum coin is required to make given amount using recursion and memoixation method and tabulation method 
+// solve minimum coin is required to make given amount using recursion and memoization method and tabulation method 
 
 #include <bits/stdc++.h> 
 
@@ -38,6 +38,8 @@ for(int i=0; i<num.size();i++){
 dp[x] = mini;
 return mini;
 }
+//time complexity = o(x*n) x = smount n = number of coins
+// space compleity  =  O(x)
 //solve using tabulation 
 int solvetab(vector<int> &num, int x){
    vector<int> dp(x+1,INT_MAX);
@@ -56,11 +58,8 @@ for(int j=0;j<num.size();j++){
  return dp[x];
 
 }
-
-
-
-
-
+// time complexity =  O(x*n)
+// space complexity =O(x)
 
 int minimumElements(vector<int> &num, int x)
 {
